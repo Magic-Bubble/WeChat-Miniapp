@@ -1,0 +1,31 @@
+<!--pages/run/run.wxml-->
+<view class="container">
+    <map class="map" scale="14" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" polyline="{{polyline}}"></map>
+    <view id="body-start" class="body" style="display:{{!start?'block':'none'}}">
+        <view class="desc1">室外跑步</view>
+        <view class="desc2">普通跑步</view>
+        <button class="btn-start" bindtap="startRun">开始</button>
+    </view>
+    <view id="body-stop" class="body" style="display:{{start?'block':'none'}}">
+        <view class="distance">{{distance}} 公里</view>
+        <view class="detail">
+            <view class="detail-item">
+                <view>{{speed}}</view>
+                <view>配速</view>
+            </view>
+            <view class="detail-item">
+                <view>{{time}}</view>
+                <view>时间</view>
+            </view>
+            <view class="detail-item">
+                <view>{{calorie}} 大卡</view>
+                <view>消耗</view>
+            </view>
+        </view>
+        <button class="btn-pause" bindtap="pauseRun" style="display:{{start&&!pause?'block':'none'}}">暂停</button>
+        <view class="btn-group" style="display:{{start&&pause?'flex':'none'}}">
+            <button class="btn-stop" bindtap="stopRun">终止</button>
+            <button class="btn-goon" bindtap="goonRun">继续</button>
+        </view>
+    </view>
+</view>

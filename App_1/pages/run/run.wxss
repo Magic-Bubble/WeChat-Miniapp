@@ -1,0 +1,91 @@
+/* pages/run/run.wxss */
+.container {
+    padding: 0;
+}
+
+.map {
+    width: 100%;
+    height: 480rpx;
+}
+
+.body {
+    width: 100%;
+    background-color: #29292f;
+    text-align: center;
+    background-size: 100% 100%;
+    font-family: Microsoft Yahei;
+    color: #fff;
+}
+
+.desc1 {
+    font-size: 48rpx;
+    margin-top: 150rpx;
+}
+
+.desc2 {
+    font-size: 30rpx;
+    margin-top: 100rpx;
+}
+
+.btn-start {
+    width: 200rpx;
+    height:200rpx;
+    margin-top: 122rpx;
+    margin-bottom: 100rpx;
+    border-radius: 50%;
+    background-color: #3392ea;
+    color: #fff;
+    line-height: 200rpx;
+}
+
+.distance {
+    font-size: 48rpx;
+    margin-top: 150rpx;
+}
+
+.detail {
+    width: 100%;
+    margin-top: 100rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 30rpx;
+}
+
+.detail-item {
+    width: 33%;
+}
+
+.btn-pause {
+    width: 200rpx;
+    height:200rpx;
+    margin: 82rpx auto 100rpx;
+    border-radius: 50%;
+    background-color: #ffb616;
+    color: #fff;
+    line-height: 200rpx;
+}
+
+.btn-group {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 82rpx;
+    margin-bottom: 100rpx;
+}
+
+.btn-stop {
+    width: 200rpx;
+    height:200rpx;
+    border-radius: 50%;
+    background-color: #f05556;
+    color: #fff;
+    line-height: 200rpx;
+}
+
+.btn-goon {
+    width: 200rpx;
+    height:200rpx;
+    border-radius: 50%;
+    background-color: #4bc868;
+    color: #fff;
+    line-height: 200rpx;
+}

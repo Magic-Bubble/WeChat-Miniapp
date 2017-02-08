@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="logo" src="http://o7iop8z5f.bkt.clouddn.com/wechat/miniapps/app1/logo.png" />
+  <view class="moto">
+    <view class="bigTitle">Running Endless</view>
+    <view class="desc">Follow excellence and Success will chase you.</view>
+  </view>
+  <view class="btn-group">
+    <button bindtap="toRun">开启跑步之旅</button>
+    <button bindtap="toMusic">听点音乐放松</button>
+  </view>
+</view> 

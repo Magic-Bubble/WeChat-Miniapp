@@ -1,0 +1,23 @@
+<!--pages/music/music.wxml-->
+<swiper class="banner" indicator-dots autoplay>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="body">
+    <view class="audio">
+        <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{audioSrc}}" controls loop></audio>
+    </view>
+    <view class="list">
+        <view class="header">歌单</view>
+        <button class="item" wx:for="{{musicUrls}}" bindtap="playMusic" id="{{index}}">
+            <icon type="success_circle" size="16" color="green" />
+            <view class="detail">
+                <view class="name">{{item.name}}</view>
+                <view class="author">{{item.author}}</view>
+            </view>
+        </button>
+    </view>
+</view>
